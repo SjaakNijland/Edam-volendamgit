@@ -43,6 +43,8 @@
                     </li>
                     <li><a href="?action=agenda" id="agenda">Agenda</a></li>
                     <li><a href="?action=contact">Contact</a></li>
+                    <li><a href="?action=login">Login</a></li>
+                    {*<li><a href="?action=logout">Logout</a></li>*}
                 </ul>
             </div>
         </nav>
@@ -70,7 +72,9 @@
 
            <a href="?action=agenda" id="agenda">Agenda</a>
            <a href="?action=contact">Contact</a>
-        
+           <a href="?action=login">Login</a>
+           {*<a href="?action=logout">Logout</a>*}
+
            <form action="#" method="POST">
                <!-- <div class="search-btn"></div> -->
                <input type="text" placeholder="Zoeken...">

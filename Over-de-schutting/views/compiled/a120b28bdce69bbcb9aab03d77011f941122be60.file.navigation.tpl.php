@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2017-01-12 09:20:26
+<?php /* Smarty version Smarty-3.1.18, created on 2017-01-20 10:06:06
          compiled from "views\navigation.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:299775874bae459c401-65164435%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a120b28bdce69bbcb9aab03d77011f941122be60' => 
     array (
       0 => 'views\\navigation.tpl',
-      1 => 1484209174,
+      1 => 1484903162,
       2 => 'file',
     ),
   ),
@@ -64,6 +64,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </li>
                     <li><a href="?action=agenda" id="agenda">Agenda</a></li>
                     <li><a href="?action=contact">Contact</a></li>
+                    <li><a href="?action=login">Login</a></li>
+                    
                 </ul>
             </div>
         </nav>
@@ -91,7 +93,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
            <a href="?action=agenda" id="agenda">Agenda</a>
            <a href="?action=contact">Contact</a>
-        
+           <a href="?action=login">Login</a>
+           
+
            <form action="#" method="POST">
                <!-- <div class="search-btn"></div> -->
                <input type="text" placeholder="Zoeken...">

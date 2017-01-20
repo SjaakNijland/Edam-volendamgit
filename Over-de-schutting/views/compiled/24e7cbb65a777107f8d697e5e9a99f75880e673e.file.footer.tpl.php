@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2017-01-13 11:40:53
+<?php /* Smarty version Smarty-3.1.18, created on 2017-01-19 08:56:36
          compiled from "views\footer.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1155157f4f76f4a4928-97475787%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '24e7cbb65a777107f8d697e5e9a99f75880e673e' => 
     array (
       0 => 'views\\footer.tpl',
-      1 => 1484304050,
+      1 => 1484305195,
       2 => 'file',
     ),
   ),
@@ -60,7 +60,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <script src="js/plugins/animateCSS.js"></script>
         <script src="js/plugins/jquery.tooltipster.min.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/agenda.js"></script>
 
         
         <script>

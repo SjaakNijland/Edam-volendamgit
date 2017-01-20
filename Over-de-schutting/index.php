@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 // Get username, password from database
 include 'includes/config.php';
 // Load Smarty library
@@ -9,6 +9,7 @@ include 'includes/bootstrap.php';
 // Make database connection
 include 'includes/database.php';
 include 'includes/functs.php';
+
 // Assign value of page title to the smarty variable 'title', usually the value comes from a database
 $templateParser->assign('title', 'Edam-Volendam');
 
@@ -28,13 +29,38 @@ switch($action){
     break;
     case 'edam':
         $templateParser->display('locations.tpl');
-    break;
-    case 'agenda':
-        $templateParser->display('agenda.tpl');
+//    break;
+//    case 'agenda':
+//        $templateParser->display('agenda.tpl');
     break;
     case 'contact':
         $templateParser->display('contact.tpl');
-        
+    break;
+    case 'login':
+
+        include 'model/login.php';
+        include 'model/adduser.php';
+    break;
+
+    case 'logout':
+
+        $templateParser->display('login.tpl');
+        include 'model/logout.php';
+        break;
+
+    case 'login2':
+        $templateParser->display('login_submit.php');
+        break;
+
+    case 'login_submit':
+
+        include 'model/login_submit.php';
+        $templateParser->display('login_submit.tpl');
+    break;
+        case 'adduser_submit':
+        include 'model/adduser_submit.php';
+        $templateParser->display('adduser_submit.tpl');
+
     break;
     case 'admin':
         $cms_action = isset($_GET['cms_action'])?$_GET['cms_action']:"show";
