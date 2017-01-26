@@ -115,11 +115,25 @@ else
 }
 ?>
 
-<html>
+<?php
+if(isset($_SESSION["user_id"])){
+    $user = $_SESSION["user_id"];
+    if ($user == 9) {
+        echo "<div  class='container'>";
+        echo 'gelukt';
+     //   header("location: ../?action=admin");
+        echo '<a href="?action=admin">kurwa</a>';
+        echo "</div>";
+
+    }
+}
+else {
+echo '<html>
 <div class="container">
 <h2><?php echo $message; ?></h2>
     <br>
 
 </div>
-
-</html>
+</html>';
+}
+?>

@@ -1,6 +1,6 @@
 <section id="user-panel">
     <div  class="user">
-        <span class="tooltip" title="Account bekijken"></span>
+       <a href="?action=users"><span class="tooltip" title="Account bekijken"></span></a>
     </div>
     <div class="edit">
         <span class="tooltip" title="Pagina bewerken"></span>
@@ -9,6 +9,6 @@
         <span class="tooltip" title="Evenement toevoegen"></span>
     </div>
     <div class="log-out">
-        <span class="tooltip" title="Uitloggen"></span>
+       <a href="?action=logout"> <span class="tooltip" title="Uitloggen"></span></a>
     </div>
 </section>

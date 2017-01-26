@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 // Get username, password from database
 include 'includes/config.php';
 // Load Smarty library
@@ -29,10 +30,17 @@ switch($action){
     break;
     case 'edam':
         $templateParser->display('locations.tpl');
-//    break;
-//    case 'agenda':
-//        $templateParser->display('agenda.tpl');
     break;
+    case 'users':
+        include 'model/select_all_items.php';
+        $templateParser->assign('result',$result);
+        $templateParser->display('users.tpl');
+    break;
+    case 'delete':
+        $id = $_GET['phpro_user_id'];
+       include 'delete_item.php';
+        $tepmplateParser->display('userPanel.tpl');
+        break;
     case 'contact':
         $templateParser->display('contact.tpl');
     break;
@@ -51,6 +59,10 @@ switch($action){
     case 'login2':
         $templateParser->display('login_submit.php');
         break;
+    case 'accounts':
+        $templateParser->display('accounts.tpl');
+        break;
+
 
     case 'login_submit':
 

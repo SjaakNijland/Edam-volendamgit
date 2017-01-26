@@ -11,7 +11,7 @@ setlocale(LC_ALL, 'nl_NL');
 
 // Database settings
 define('DB_HOST','localhost');
-define('DB_NAME','myBand');
+define('DB_NAME','phpro_auth');
 define('DB_USERNAME','root');
 define('DB_PASSWORD','');
 
