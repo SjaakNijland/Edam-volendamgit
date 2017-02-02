@@ -16,3 +16,4 @@
         </tr>
     {/foreach}
 </table>
+<a href="index.php?action=admin">Keer terug</a>

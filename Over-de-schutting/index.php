@@ -35,7 +35,15 @@ switch($action){
         include 'model/select_all_items.php';
         $templateParser->assign('result',$result);
         $templateParser->display('users.tpl');
+        $templateParser->display('userPanel.tpl');
     break;
+
+    case 'bedrijven':
+        include 'model/select_all_items2.php';
+        $templateParser->assign('result',$result);
+        $templateParser->display('bedrijven.tpl');
+
+        break;
     case 'delete':
         $id = $_GET['phpro_user_id'];
        include 'delete_item.php';
@@ -55,9 +63,17 @@ switch($action){
         $templateParser->display('login.tpl');
         include 'model/logout.php';
         break;
+    case 'test':
+
+        $templateParser->display('test.tpl');
+
+        break;
 
     case 'login2':
         $templateParser->display('login_submit.php');
+        break;
+    case 'update':
+        include 'model/update.php';
         break;
     case 'accounts':
         $templateParser->display('accounts.tpl');
@@ -69,6 +85,12 @@ switch($action){
         include 'model/login_submit.php';
         $templateParser->display('login_submit.tpl');
     break;
+
+    case 'bedrijf_submit':
+
+        include 'model/bedrijf_submit.php';
+        $templateParser->display('bedrijf_submit.tpl');
+        break;
         case 'adduser_submit':
         include 'model/adduser_submit.php';
         $templateParser->display('adduser_submit.tpl');
@@ -76,6 +98,10 @@ switch($action){
     break;
     case 'admin':
         $cms_action = isset($_GET['cms_action'])?$_GET['cms_action']:"show";
+
+        $submit_update = isset($_POST['submit_update'])? 1:0;
+        $cms_action = $submit_update?'save':$cms_action;
+
         $templateParser->display('userPanel.tpl');
         switch($cms_action)
         {
@@ -94,9 +120,14 @@ switch($action){
             case 'edit':
                 $id = isset($_GET['id'])?$_GET['id']:0;
                 include 'model/select_one.php';
-//                include 'model/update.php';
+             //   include 'model/update.php';
                 $templateParser->assign('result',$result);
                 $templateParser->display('edit.tpl');
+            break;
+            case 'save':
+                //call to model to save item: UPDATE
+
+                //go to admin view
             break;
         }
        

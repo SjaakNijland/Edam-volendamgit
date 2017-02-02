@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2017-01-26 09:11:39
+<?php /* Smarty version Smarty-3.1.18, created on 2017-02-01 12:03:34
          compiled from "views\users.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:181705889aeab9a9e79-83864143%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd3adc6734c56bb62b31737881b3043a32ff78a4d' => 
     array (
       0 => 'views\\users.tpl',
-      1 => 1485418297,
+      1 => 1485947010,
       2 => 'file',
     ),
   ),
@@ -49,4 +49,5 @@ $_smarty_tpl->tpl_vars['oneItem']->_loop = true;
 ">delete</a> </td>
         </tr>
     <?php } ?>
-</table><?php }} ?>
+</table>
+<a href="index.php?action=admin">Keer terug</a><?php }} ?>

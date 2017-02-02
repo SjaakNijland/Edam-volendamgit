@@ -1,4 +1,25 @@
-<section id="places">
+<?php /* Smarty version Smarty-3.1.18, created on 2017-01-30 11:04:02
+         compiled from "views\home.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:3031588b05a5e017e9-78435700%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'e64ec67b9351f7c35c643899da1c549889b16a43' => 
+    array (
+      0 => 'views\\home.tpl',
+      1 => 1485770413,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '3031588b05a5e017e9-78435700',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.18',
+  'unifunc' => 'content_588b05a5efbe12_43754583',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_588b05a5efbe12_43754583')) {function content_588b05a5efbe12_43754583($_smarty_tpl) {?><section id="places">
     <div class="container">
 
         <div class="col-33 edam">
@@ -183,4 +204,4 @@
     </article>
 
 
-</section>
+</section><?php }} ?>

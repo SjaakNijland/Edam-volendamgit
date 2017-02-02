@@ -120,9 +120,9 @@ if(isset($_SESSION["user_id"])){
     $user = $_SESSION["user_id"];
     if ($user == 9) {
         echo "<div  class='container'>";
-        echo 'gelukt';
+        echo 'Welkom admin';
      //   header("location: ../?action=admin");
-        echo '<a href="?action=admin">kurwa</a>';
+        echo '<a href="?action=admin">Naar het bedieningspaneel</a>';
         echo "</div>";
 
     }

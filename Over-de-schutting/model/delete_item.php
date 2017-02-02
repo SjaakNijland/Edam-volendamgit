@@ -1,6 +1,6 @@
 <?php
 
-$sql = "DELETE from phpro_users WHERE phpro_user_id=$id";
+$sql = "DELETE * FROM phpro_users WHERE phpro_user_id=$id";
 
 $link = '';
 echo "item deleted";
